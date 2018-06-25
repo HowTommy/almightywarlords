@@ -51,11 +51,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IDbContext.cs" />
+    <Compile Include="IUserDataAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AW.Models\AW.Models.csproj">
+      <Project>{de965255-110e-462a-9437-cab1e68bab2d}</Project>
+      <Name>AW.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

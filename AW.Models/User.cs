@@ -12,6 +12,8 @@
 
         public string Password { get; set; }
 
+        public string Salt { get; set; }
+
         public string PictureUrl { get; set; }
 
         public string Language { get; set; }
@@ -20,12 +22,12 @@
 
         public string CguVersion { get; set; }
 
-        public DateTime? DateRemoval { get; set; }
+        public DateTime? RemovalDate { get; set; }
 
-        public DateTime DateLastConnection { get; set; }
+        public DateTime LastConnectionDate { get; set; }
 
-        public DateTime DateCreation { get; set; }
+        public DateTime CreationDate { get; set; }
 
-        public DateTime DateModification { get; set; }
+        public DateTime ModificationDate { get; set; }
     }
 }
