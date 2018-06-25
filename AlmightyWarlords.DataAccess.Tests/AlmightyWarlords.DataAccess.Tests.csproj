@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{92A4E5B9-B69C-42FC-8623-8C70815C2A26}</ProjectGuid>
+    <ProjectGuid>{7571052A-13FD-4088-A370-27FAFE642F31}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AlmightyWarlords.DataAccess</RootNamespace>
-    <AssemblyName>AlmightyWarlords.DataAccess</AssemblyName>
+    <RootNamespace>AlmightyWarlords.DataAccess.Tests</RootNamespace>
+    <AssemblyName>AlmightyWarlords.DataAccess.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,13 +41,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DatabaseInitialization\" />
-    <Folder Include="DatabaseObjects\" />
-    <Folder Include="DataContext\" />
-    <Folder Include="Migrations\" />
-    <Folder Include="UnitOfWork\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
