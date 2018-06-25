@@ -52,16 +52,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatabaseInitialization\ApplicationDatabaseInitializer.cs" />
     <Compile Include="DataContext\AWContext.cs" />
     <Compile Include="DataContext\Configuration\UserConfiguration.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\Base\RepositoryBase.cs" />
     <Compile Include="UserDataAccess.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DatabaseInitialization\" />
     <Folder Include="DatabaseObjects\" />
-    <Folder Include="Migrations\" />
     <Folder Include="UnitOfWork\" />
   </ItemGroup>
   <ItemGroup>
