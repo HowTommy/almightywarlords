@@ -1,7 +1,6 @@
-﻿using AW.DataAccess.Repositories.Base;
-
-namespace AW.DataAccess
+﻿namespace AW.DataAccess
 {
+    using AW.DataAccess.Repositories.Base;
     using System;
     using AW.DataAccess.Interfaces;
     using AW.Models;

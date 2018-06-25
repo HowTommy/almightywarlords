@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{982BE63E-5BF7-4CC0-BE45-210E941A0D1A}</ProjectGuid>
+    <ProjectGuid>{7E808A4D-D685-4E03-A2A5-70568BFAC3D4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AW.Web.Controller</RootNamespace>
-    <AssemblyName>AW.Web.Controller</AssemblyName>
+    <RootNamespace>AW.Web.Controllers.Tests</RootNamespace>
+    <AssemblyName>AW.Web.Controllers.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -42,28 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AW.DataAccess.Interfaces\AW.DataAccess.Interfaces.csproj">
-      <Project>{f270e65a-30b8-439c-8fa3-3a61ffc4371a}</Project>
-      <Name>AW.DataAccess.Interfaces</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\AW.DataAccess\AW.DataAccess.csproj">
-      <Project>{92a4e5b9-b69c-42fc-8623-8c70815c2a26}</Project>
-      <Name>AW.DataAccess</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\AW.Logic.Interfaces\AW.Logic.Interfaces.csproj">
-      <Project>{a152db2b-4351-4409-a728-c5f26ccca8bb}</Project>
-      <Name>AW.Logic.Interfaces</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\AW.Logic\AW.Logic.csproj">
-      <Project>{06c14149-780e-4b9d-b12c-8020e25502a6}</Project>
-      <Name>AW.Logic</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\AW.Models\AW.Models.csproj">
-      <Project>{de965255-110e-462a-9437-cab1e68bab2d}</Project>
-      <Name>AW.Models</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

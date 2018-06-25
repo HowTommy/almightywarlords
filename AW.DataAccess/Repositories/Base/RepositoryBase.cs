@@ -4,7 +4,7 @@
 
     public class RepositoryBase<TEntity>
     {
-        protected IDbContext CurrentContext { get; private set; }
+        protected IDbContext CurrentContext { get; }
         
         protected RepositoryBase(IDbContext dbContext)
         {

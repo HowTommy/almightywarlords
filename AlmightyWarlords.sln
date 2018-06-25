@@ -19,9 +19,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AW.WebApi", "AW.WebApi\AW.W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AW.WebApi.Tests", "AW.WebApi.Tests\AW.WebApi.Tests.csproj", "{168AEA99-500F-4005-856F-CE5FE59AB166}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AW.Web.Controller", "AW.Web.Controller\AW.Web.Controller.csproj", "{982BE63E-5BF7-4CC0-BE45-210E941A0D1A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AW.Web.Controllers", "AW.Web.Controllers\AW.Web.Controllers.csproj", "{982BE63E-5BF7-4CC0-BE45-210E941A0D1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AW.Web.Controller.Tests", "AW.Web.Controller.Tests\AW.Web.Controller.Tests.csproj", "{7E808A4D-D685-4E03-A2A5-70568BFAC3D4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AW.Web.Controllers.Tests", "AW.Web.Controllers.Tests\AW.Web.Controllers.Tests.csproj", "{7E808A4D-D685-4E03-A2A5-70568BFAC3D4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AW.DataAccess.Interfaces", "AW.DataAccess.Interfaces\AW.DataAccess.Interfaces.csproj", "{F270E65A-30B8-439C-8FA3-3A61FFC4371A}"
 EndProject

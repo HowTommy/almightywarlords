@@ -220,9 +220,9 @@
       <Project>{de965255-110e-462a-9437-cab1e68bab2d}</Project>
       <Name>AW.Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\AW.Web.Controller\AW.Web.Controller.csproj">
+    <ProjectReference Include="..\AW.Web.Controllers\AW.Web.Controllers.csproj">
       <Project>{982be63e-5bf7-4cc0-be45-210e941a0d1a}</Project>
-      <Name>AW.Web.Controller</Name>
+      <Name>AW.Web.Controllers</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

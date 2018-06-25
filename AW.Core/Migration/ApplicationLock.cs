@@ -1,4 +1,4 @@
-﻿namespace AW.Core
+﻿namespace AW.Core.Migration
 {
     using System;
     using System.Data.SqlClient;
@@ -24,12 +24,6 @@
         /// SQL command to release the lock.
         /// </summary>
         private const string RELEASE_LOCK_COMMAND = @"DECLARE @result int; EXEC @result = sp_releaseapplock @Resource SELECT @result";
-
-        /// <summary>
-        /// SQL command to check if the lock is activated.
-        /// APPLOCK_TEST : Returns 0 when the lock cannot be granted to the specified owner and returns 1 if the lock can be granted.
-        /// </summary>
-        private const string TEST_LOCK_COMMAND = @"SELECT APPLOCK_TEST (@databasePrincipal, @Resource, @LockMode, @LockOwner )";
 
         /// <summary>
         /// Lock used to avoid calling TryGetLock and ReleaseLock at the same time.
