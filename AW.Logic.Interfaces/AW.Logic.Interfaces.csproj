@@ -45,6 +45,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AW.Core\AW.Core.csproj">
+      <Project>{1e8da5a2-7412-4ee3-9ce0-b04c07af9344}</Project>
+      <Name>AW.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AW.Models\AW.Models.csproj">
       <Project>{de965255-110e-462a-9437-cab1e68bab2d}</Project>
       <Name>AW.Models</Name>

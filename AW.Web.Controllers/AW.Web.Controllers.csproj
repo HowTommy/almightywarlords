@@ -72,7 +72,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountController.cs" />
-    <Compile Include="Base\BaseController.cs" />
+    <Compile Include="Base\DefaultControllerBase.cs" />
+    <Compile Include="Base\ModelBase.cs" />
     <Compile Include="Models\AccountLogInModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -1,4 +1,4 @@
-﻿@model AW.Web.Controllers.Models.Credentials
+﻿@model AW.Web.Controllers.Models.AccountLogInModel
 
 @{
     ViewBag.Title = "Log in";
@@ -7,6 +7,7 @@
 
 <h2>Log in</h2>
 
+@Html.Partial("_ErrorMessages", Model.ErrorMessages)
 
 @using (Html.BeginForm()) 
 {

@@ -1,9 +1,12 @@
 ﻿namespace AW.DependencyResolution
 {
+    using SimpleInjector;
+
     using AW.DataAccess;
     using AW.DataAccess.DataContext;
-    using SimpleInjector;
     using AW.DataAccess.Interfaces;
+    using AW.Logic;
+    using AW.Logic.Interfaces;
 
     public static class DefaultPackage
     {
@@ -12,6 +15,8 @@
             container.Register<IDbContext, AWContext>();
 
             container.Register<IUserDataAccess, UserDataAccess>();
+
+            container.Register<IUserLogic, UserLogic>();
         }
     }
 }

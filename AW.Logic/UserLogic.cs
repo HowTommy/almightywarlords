@@ -1,16 +1,17 @@
 ﻿namespace AW.Logic
 {
-    using AW.Core.Models;
-    using AW.Logic.Base;
-    using AW.DataAccess.Interfaces;
-    using AW.Models;
-    using AW.Logic.Interfaces;
-    using AW.Core;
-    using AW.Resources;
-    using BCrypt.Net;
     using System;
+    using BCrypt.Net;
 
-    public class UserLogic : BaseLogic, IUserLogic
+    using AW.Core;
+    using AW.Core.Models;
+    using AW.DataAccess.Interfaces;
+    using AW.Logic.Base;
+    using AW.Logic.Interfaces;
+    using AW.Models;
+    using AW.Resources;
+
+    public class UserLogic : LogicBase, IUserLogic
     {
         private readonly IUserDataAccess _userDataAccess;
 
@@ -23,8 +24,8 @@
         {
             try
             {
-                if (!ValidateEmail(context, email) ||
-                    !ValidateString(context, password, StringMaxLengths.LARGE, StringMinLengths.PASSWORD))
+                if (!ValidateEmail(context, email, Resource.Error_EnterValidEmail) ||
+                    !ValidateString(context, password, StringMaxLengths.LARGE, StringMinLengths.PASSWORD, Resource.Error_EnterValidPassword))
                 {
                     return null;
                 }
@@ -43,7 +44,9 @@
             catch (Exception ex)
             {
                 context.Errors.Add(Resource.Error_Generic);
-                // todo log error
+
+                LogException(ex, context, GetType().Name, GetCurrentMethodName());
+
                 return null;
             }
         }

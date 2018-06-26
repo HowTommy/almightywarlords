@@ -2,9 +2,10 @@
 {
     using AW.Core.Models;
     using AW.Resources;
+    using AW.Web.Controllers.Base;
     using System.ComponentModel.DataAnnotations;
 
-    public class AccountLogInModel
+    public class AccountLogInModel : ModelBase
     {
         [Required(ErrorMessageResourceName = "Error_EnterValidEmail", ErrorMessageResourceType = typeof(Resource))]
         [StringLength(StringMaxLengths.EMAIL, ErrorMessageResourceName = "Error_EnterValidEmail", ErrorMessageResourceType = typeof(Resource))]

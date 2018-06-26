@@ -1,6 +1,6 @@
 ﻿namespace AW.Logic.Interfaces
 {
-    using System.Runtime.Remoting.Contexts;
+    using AW.Core;
     using AW.Models;
 
     public interface IUserLogic
