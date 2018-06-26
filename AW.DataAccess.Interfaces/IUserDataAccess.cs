@@ -6,7 +6,7 @@
     {
         User GetUserById(long userId);
 
-        User GetUserByLogin(string login);
+        User GetUserByEmail(string login);
 
         bool Create(User user);
 

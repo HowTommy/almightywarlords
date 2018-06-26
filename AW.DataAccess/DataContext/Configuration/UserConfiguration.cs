@@ -12,7 +12,7 @@ namespace AW.DataAccess.DataContext.Configuration
             Property(p => p.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             Property(p => p.Pseudo).HasMaxLength(50).IsRequired();
             Property(p => p.Email).HasMaxLength(255).IsRequired();
-            Property(p => p.Password).HasMaxLength(1024).IsRequired();
+            Property(p => p.HashedPassword).HasMaxLength(1024).IsRequired();
             Property(p => p.Salt).HasMaxLength(1024).IsRequired();
             Property(p => p.PictureUrl).HasMaxLength(2048).IsRequired();
             Property(p => p.Language).HasMaxLength(10).IsRequired();

@@ -31,7 +31,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BCrypt.Net-Next, Version=3.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\BCrypt.Net-Next.3.0.1\lib\net452\BCrypt.Net-Next.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,9 +46,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base\BaseLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserLogic.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\AW.Core\AW.Core.csproj">
+      <Project>{1e8da5a2-7412-4ee3-9ce0-b04c07af9344}</Project>
+      <Name>AW.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AW.DataAccess.Interfaces\AW.DataAccess.Interfaces.csproj">
+      <Project>{f270e65a-30b8-439c-8fa3-3a61ffc4371a}</Project>
+      <Name>AW.DataAccess.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AW.Logic.Interfaces\AW.Logic.Interfaces.csproj">
+      <Project>{a152db2b-4351-4409-a728-c5f26ccca8bb}</Project>
+      <Name>AW.Logic.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AW.Models\AW.Models.csproj">
+      <Project>{de965255-110e-462a-9437-cab1e68bab2d}</Project>
+      <Name>AW.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AW.Resources\AW.Resources.csproj">
+      <Project>{0AAC6D86-A193-4C08-BFC1-D2121204C492}</Project>
+      <Name>AW.Resources</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

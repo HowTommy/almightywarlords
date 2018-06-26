@@ -14,7 +14,7 @@
             throw new NotImplementedException();
         }
 
-        public User GetUserByLogin(string login)
+        public User GetUserByEmail(string login)
         {
             throw new NotImplementedException();
         }
