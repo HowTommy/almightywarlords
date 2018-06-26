@@ -3,7 +3,6 @@
 namespace AW.Web.Controllers
 {
     using AW.Logic.Interfaces;
-    using AW.Resources;
     using AW.Web.Controllers.Base;
     using AW.Web.Controllers.Models;
     using System.Web.Mvc;
@@ -40,11 +39,11 @@ namespace AW.Web.Controllers
 
             if (user == null)
             {
-                model.ErrorMessages = context.Errors;
+                ViewBag.ErrorMessages = context.Errors;
                 return View(model);
             }
 
-            // todo log in user via cookie/session/owin/oauth
+            // todo log in user via cookie/session/owin/oauth https://skalp.developpez.com/tutoriels/dotnet/authentification-formulaire-owin-asp-net-mvc-5/
 
             return RedirectToAction("Index", "Home");
         }

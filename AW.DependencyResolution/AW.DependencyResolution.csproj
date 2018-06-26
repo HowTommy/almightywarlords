@@ -70,6 +70,14 @@
       <Project>{92A4E5B9-B69C-42FC-8623-8C70815C2A26}</Project>
       <Name>AW.DataAccess</Name>
     </ProjectReference>
+    <ProjectReference Include="..\AW.Logic.Interfaces\AW.Logic.Interfaces.csproj">
+      <Project>{A152DB2B-4351-4409-A728-C5F26CCCA8BB}</Project>
+      <Name>AW.Logic.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AW.Logic\AW.Logic.csproj">
+      <Project>{06C14149-780E-4B9D-B12C-8020E25502A6}</Project>
+      <Name>AW.Logic</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

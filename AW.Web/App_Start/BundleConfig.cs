@@ -1,8 +1,8 @@
-﻿using System.Web;
-using System.Web.Optimization;
-
-namespace AW.Web
+﻿namespace AW.Web
 {
+    using System.Web.Optimization;
+    using BundleTransformer.Core.Transformers;
+
     public class BundleConfig
     {
         // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
@@ -23,9 +23,40 @@ namespace AW.Web
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+            RegisterConstantsStyleBundles(bundles);
+            RegisterCommonStyleBundles(bundles);
+            RegisterControllersStyleBundles(bundles);
+        }
+
+        private static void RegisterConstantsStyleBundles(BundleCollection bundles)
+        {
+            var bundle = new StyleBundle("~/bundles/style/constants")
+                .IncludeDirectory("~/Styles/Constants", "*.css", true)
+                .IncludeDirectory("~/Styles/Constants", "*.less", true);
+            AddStyleBundle(bundles, bundle);
+        }
+
+        private static void RegisterCommonStyleBundles(BundleCollection bundles)
+        {
+            var bundle = new StyleBundle("~/bundles/style/common")
+                .IncludeDirectory("~/Styles/Common", "*.css", true)
+                .IncludeDirectory("~/Styles/Common", "*.less", true);
+            AddStyleBundle(bundles, bundle);
+        }
+
+        private static void RegisterControllersStyleBundles(BundleCollection bundles)
+        {
+            var bundle = new StyleBundle("~/bundles/style/controllers")
+                .IncludeDirectory("~/Styles/Controllers", "*.css", true)
+                .IncludeDirectory("~/Styles/Controllers", "*.less", true);
+            AddStyleBundle(bundles, bundle);
+        }
+
+        private static void AddStyleBundle(BundleCollection bundles, Bundle bundle)
+        {
+            bundle.Transforms.Add(new StyleTransformer());
+            bundle.Transforms.Add(new CssMinify());
+            bundles.Add(bundle);
         }
     }
 }
